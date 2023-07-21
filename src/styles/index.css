@@ -19,24 +19,49 @@ input:focus {
 .to-do-list {
     margin: auto;
     background-color: #FDE3D8;
-    width: 400px;
+    width: 30%;
     font-family: 'Pangolin';
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     list-style: none;
-};
+    font-size: larger;
+    padding-left: 0%;
+}
 
 .to-do-list li {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 0%;
-    /* border-bottom: 1px solid #6D2E46; */
+    padding-left: 4%;
+    height: 40px;
+    padding-top: 5px;
 }
 
 .to-do-list button {
     color: darkgray;
     background-color: transparent;
     border: none;
-    /* padding: 5px 20px; */
+    margin-right: 15px;
+    visibility: hidden;
+    padding-bottom: 5px;
+}
+
+.actual-tasks:hover {
+    background-color: #FBC8B1;
+}
+
+.to-do-list li:hover button {
+    visibility: visible;
+}
+
+.placeholder-task {
+    color: darkgray;
+}
+
+.pending-task-number {
+    font-size: small;
+    color: gray;
+    text-align: end;
+    padding-right: 4px;
+    font-family: 'Bitter';
+    background-color: #FEF1EC;
 }
